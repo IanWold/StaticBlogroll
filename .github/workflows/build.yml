@@ -1,0 +1,47 @@
+name: Build
+
+on:
+  push:
+    branches: [ "main" ]
+  schedule:
+    - cron: "0 0 * * *"
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    env:
+      DOTNET_INSTALL_DIR: '.\.dotnet'
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Cache dotnet
+      id: cache-dotnet
+      uses: actions/cache@v3
+      with:
+        path: ${{ env.DOTNET_INSTALL_DIR }}
+        key: ${{ runner.os }}-dotnet-6
+        restore-keys: ${{ runner.os }}-dotnet-6
+
+    - name: Setup dotnet
+      if: ${{ steps.cache-dotnet.outputs.cache-hit != 'true' }}
+      uses: actions/setup-dotnet@v2
+      with:
+        dotnet-version: 6.0.x
+
+    - name: Setup dotnet-script
+      run: ${{ env.DOTNET_INSTALL_DIR }}\dotnet tool install -g dotnet-script
+      
+    - name: Set dotnet path
+      run: echo "${{ env.DOTNET_INSTALL_DIR }}" | Out-File -FilePath $ENV:GITHUB_PATH -Encoding utf8 -Append
+
+    - name: Build
+      run: ${{ env.DOTNET_INSTALL_DIR }}\dotnet script build.csx
+
+    - name: Deploy
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./output

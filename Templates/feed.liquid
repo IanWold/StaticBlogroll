@@ -1,0 +1,6 @@
+{% for post in posts %}
+    <figure>
+        <a href="{{ post.Url }}"><h2 style="margin-bottom: 0">{{ post.Title }}</h2></a>
+        <figcaption><i>{{ post.Date }}</i> - <a href="{{ post.AuthorUrl }}">{{ post.Author }}</a></figcaption>
+    </figure>
+{% endfor %}
