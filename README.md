@@ -25,6 +25,10 @@ It's easy to set up your own blogroll using this repo, though it does include a 
 5. Your site should deploy in a few seconds to a default URL. Navigate to this URL to ensure it deployed correctly.
 6. You're done! Add all the RSS feeds you want, though be careful that invalid RSS files can cause the build to fail. Continue on this README for al lthe options you have for configuration, and then when you're happy share your blogroll with the world!
 
+I would love to see what you make with this! Please feel free to open a discussion in this repo to show off your work, or if you aren't ready to show the world how awesome your reading list is feel free to [reach out to my directly](https://ian.wold.guru/connect.html) on any channel :)
+
+If you get stuck anywhere please feel free to open a new dicussion on this repository, or search if someone's already had the same issue. I aim to respond within the next business day unless I'm out on vacation.
+
 ## Files and Configuration
 
 ### Config
@@ -49,3 +53,9 @@ The workflow is defined at `.github/workflows/build.yml`; you can edit this file
 It will run each day at midnight automatically, or when you push to the `main` branch. It sets up `dotnet` and `dotnet-script` so that it can run the CSX file. That setup is cached, so it will take longer to setup the first time but subsequent setups will only take a few seconds to fetch the cached files.
 
 It then runs `build.csx`, which outputs the site to `/output`. The contents of that file are then committed onto the `gh-pages` branch, from which GitHub Pages will deploy.
+
+## Contributing
+
+Thank you for your interest, I would _love_ for you to contribute! If you identify a bug or a feature you want to add, please open an issue on it and we can figure next steps. I can't promise to include all features, my goal is to maintain this as a lightweight, super-easy way for folks to fork and get going.
+
+If you've identified a bug and have a simple fix it's definitely alright to open a PR off the bat!
