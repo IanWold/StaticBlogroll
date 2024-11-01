@@ -6,7 +6,7 @@
 
 Publish a **blazingly fast** and **super cool** blogroll with recent posts using Github Actions and Pages!
 
-Fast Setup ⚡ Low Maintenance 💪 Extremely Dapper 🕶️ Statically-Generated
+Fast Setup ⚡ Low Maintenance 💪 Extremely Dapper 😎 Statically-Generated
 
 [Setup](#setup) •
 [Configuration](#configuration) •
