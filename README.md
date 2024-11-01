@@ -1,4 +1,21 @@
-# Static Blogroll
+<div align="center">
+
+<img src="img/logo.png" width="100" alt="Warp" />
+    
+# StaticBlogroll
+
+Publish a **blazingly fast** and **super cool** blogroll with recent posts using Github Actions and Pages!
+
+Fast Setup ⚡ Low Maintenance 💪 Extremely Dapper 🕶️ Statically-Generated
+
+[Setup](#setup) •
+[Configuration](#configuration) •
+[Next Steps](#next-steps) •
+[Contributing](#contributing)
+
+</div>
+
+---
 
 I'm a big advocate that everyone should be maintaining a blogroll. Not super actively - maybe more passively - but you should definitely have one. No doubt there's dozens of blogs a year you tune into - an article here to get help on an issue, an article there to learn about a topic, articles for fun or insight or curiousity.
 
@@ -8,7 +25,7 @@ Just about every blog has an RSS feed, but even so it can be a bit of a barrier 
 
 This project is an attempt to lower the barrier and make it easier to both keep your own reading list and to publish it to help others discover the cool blogs you've found. Fork this repository, save your list of RSS feeds, and use GitHub pages to deploy a [nice, dapper page](https://ian.wold.guru/Blogroll/) showing off your blogs and their latest posts! If you're like me, you might be inclined to set this site as your browser's homepage to get a little reading in before the meetings start.
 
-## Make a Blogroll!
+## Setup
 
 It's easy to set up your own blogroll using this repo, though it does include a couple steps to configure GitHub appropriately:
 
@@ -29,15 +46,19 @@ I would love to see what you make with this! Please feel free to open a discussi
 
 If you get stuck anywhere please feel free to open a new dicussion on this repository, or search if someone's already had the same issue. I aim to respond within the next business day unless I'm out on vacation.
 
-## Files and Configuration
+## Configuration
 
-### Config
+The `config.json` file contains all the configuration for the generated site:
 
 * `Title` is the title of the generated blogroll site, both the page title (`<title>`) as well as at the top of the navigation bar.
 * `PostsToShow` is the maximum number of posts from your RSS feeds to display on the "latest" page. Set to `-1` to show all posts.
 * `CssUrl` is the URL to the CSS for your page. By default this is [MVP.css](https://andybrewer.github.io/mvp/), which I recommend because of its quality in styling plain HTML. This can be a URL to any CSS served via CDN, or to set this to your own CSS file put `yourfile.css` in the `Static` directory then set this property to `./yourfile.css`. Note that if your CSS requires any modifications to the HTML, you can update the templates in the `Templates` directory.
 * `Pages` contains the title and subtitle settings for the Blogroll and Latest pages, which are the headings that display at the top of each page. You can write any HTML in these properties you like!
 * `Feeds` is the set of links to your RSS feeds.
+
+## Next Steps
+
+This is very intentionally _not_ a product you install and host, but a repo for you to _fork_ and do your own thing with. It's a base canvas you can use and extend however works best for you!
 
 ### Files
 
