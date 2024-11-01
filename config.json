@@ -4,7 +4,7 @@
     "CssUrl": "https://unpkg.com/mvp.css",
     "Pages": {
         "Blogroll": {
-            "Title": "Welcome to my BLogroll!",
+            "Title": "Welcome to my Blogroll!",
             "Subtitle": "This page has all the blogs I follow and their latest posts."
         },
         "Latest": {
