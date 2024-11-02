@@ -4,9 +4,9 @@
     
 # StaticBlogroll
 
-![GitHub Release](https://img.shields.io/github/v/release/ianwold/staticblogroll?include_prereleases&style=for-the-badge&label=version)
-![GitHub License](https://img.shields.io/github/license/ianwold/staticblogroll?style=for-the-badge&link=https%3A%2F%2Fgithub.com%2FIanWold%2FStaticBlogroll%3Ftab%3DMIT-1-ov-file)
-![GitHub discussions custom search](https://img.shields.io/github/discussions-search?query=repo%3Aianwold%2Fstaticblogroll%20is%3Aopen%20category%3AShowcase&style=for-the-badge&label=blogrolls%20made&link=https%3A%2F%2Fgithub.com%2FIanWold%2FStaticBlogroll%2Fdiscussions%2Fcategories%2Fshowcase)
+<a href="https://github.com/IanWold/StaticBlogroll/releases"><img src="https://img.shields.io/github/v/release/ianwold/staticblogroll?include_prereleases&style=for-the-badge&label=version" /></a>
+<a href="https://github.com/IanWold/StaticBlogroll?tab=MIT-1-ov-file"><img src="https://img.shields.io/github/license/ianwold/staticblogroll?style=for-the-badge" /></a>
+<a href="https://github.com/IanWold/StaticBlogroll/discussions/categories/showcase"><img src="https://img.shields.io/github/discussions-search?query=repo%3Aianwold%2Fstaticblogroll%20is%3Aopen%20category%3AShowcase&style=for-the-badge&label=blogrolls%20made" /></a>
 
 Publish a **blazingly fast** and **super cool** blogroll with recent posts using Github Actions and Pages!
 
@@ -81,6 +81,6 @@ It then runs `build.csx`, which outputs the site to `/output`. The contents of t
 
 ## Contributing
 
-Thank you for your interest, I would _love_ for you to contribute! If you identify a bug or a feature you want to add, please open an issue on it and we can figure next steps. I can't promise to include all features, my goal is to maintain this as a lightweight, super-easy way for folks to start a repo and get going.
+Thank you for your interest, I would _love_ for you to contribute! If you have an idea for something to add please [open a discussion on it](https://github.com/IanWold/StaticBlogroll/discussions/new?category=ideas) and we can figure out next steps. I can't promise to include all features, my goal is to maintain this as a lightweight, super-easy way for folks to start a repo and get going.
 
-If you've identified a bug and have a simple fix it's definitely alright to open a PR off the bat!
+If you've identified a bug please [open an issue](https://github.com/IanWold/StaticBlogroll/issues/new?assignees=IanWold&labels=&projects=&template=bug_report.md&title=) and I'll be sure to prioritize it. However, if you alraedy have a simple fix it's definitely alright to open a PR off the bat!
