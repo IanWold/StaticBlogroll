@@ -38,13 +38,13 @@ It's easy to set up your own blogroll using this repo, though it does include a 
     1. Select `Read and Write Permissions`
     2. Check `Allow GitHub Actions to create and approve pull requests`
     3. Click Save
-3. Note that the very first run will have failed - this is because the above permissions for GitHub Actions were not set. After setting those permissions, let's trigger a new build, which should now work correct, generating a new branch called `gh-pages` from which we'll deploy the site. Add an RSS feed to `Feeds` in `config.json` and commit it to test that the build works. RSS implementations can vary widely, and sometimes RSS files can be invalid. I like testing with `https://gizmodo.com/feed` because I know it's always well-formed. If the build worked, there should now be a `gh-pages` branch in your repository!
+3. Note that the very first run will have failed - this is because the above permission for GitHub Actions was not set. After granting the permission the build should work, so let's kick off a build which will generate a new branch called `gh-pages` (from which we'll deploy the site). Add an RSS feed to `Feeds` in `config.json` and commit it to test that the build works. RSS implementations can vary widely, and sometimes RSS files can be invalid. I like testing with `https://gizmodo.com/feed` because I know it's always well-formed. If the build worked, there should now be a `gh-pages` branch in your repository!
 4. Now that we have the `gh-pages` branch built with our generated site, we can deploy it using GitHub Pages. On your repository, go to Settings > Pages (Under Code and Automation), and in the Build and Deployment section:
     1. Set Source to `Deploy from a branch`
     2. Select `gh-pages` as the Branch
     3. Click Save
 5. Your site should deploy in a few seconds to a default URL. Navigate to this URL to ensure it deployed correctly.
-6. You're done! Add all the RSS feeds you want, though be careful that invalid RSS files can cause the build to fail. Continue on this README for al lthe options you have for configuration, and then when you're happy share your blogroll with the world!
+6. You're done! Add all the RSS feeds you want, though be careful that invalid RSS files can cause the build to fail. Continue on this README for all the options you have for configuration, and then when you're happy share your blogroll with the world!
 
 The only final step is to show off your fancy new blogroll: [post your blogroll in our showcases](https://github.com/IanWold/StaticBlogroll/discussions/new?category=showcase) in the discussions for this repo!
 
@@ -83,4 +83,4 @@ It then runs `build.csx`, which outputs the site to `/output`. The contents of t
 
 Thank you for your interest, I would _love_ for you to contribute! If you have an idea for something to add please [open a discussion on it](https://github.com/IanWold/StaticBlogroll/discussions/new?category=ideas) and we can figure out next steps. I can't promise to include all features, my goal is to maintain this as a lightweight, super-easy way for folks to start a repo and get going.
 
-If you've identified a bug please [open an issue](https://github.com/IanWold/StaticBlogroll/issues/new?assignees=IanWold&labels=&projects=&template=bug_report.md&title=) and I'll be sure to prioritize it. However, if you alraedy have a simple fix it's definitely alright to open a PR off the bat!
+If you've identified a bug please [open an issue](https://github.com/IanWold/StaticBlogroll/issues/new?assignees=IanWold&labels=&projects=&template=bug_report.md&title=) and I'll be sure to prioritize it. However, if you already have a simple fix it's definitely alright to open a PR off the bat!
