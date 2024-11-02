@@ -38,8 +38,8 @@ It's easy to set up your own blogroll using this repo, though it does include a 
     1. Select `Read and Write Permissions`
     2. Check `Allow GitHub Actions to create and approve pull requests`
     3. Click Save
-3. Add an RSS feed to `Feeds` in `config.json` and commit it to test that the build works. RSS implementations can vary widely, and sometimes RSS files can be invalid. I like testing with `https://gizmodo.com/feed` because I know it's always well-formed. If the build worked, there should now be a `gh-pages` branch in your repository!
-4. On your repositor, go to Settings > Pages (Under Code and Automation), and in the Build and Deployment section:
+3. Note that the very first run will have failed - this is because the above permissions for GitHub Actions were not set. After setting those permissions, let's trigger a new build, which should now work correct, generating a new branch called `gh-pages` from which we'll deploy the site. Add an RSS feed to `Feeds` in `config.json` and commit it to test that the build works. RSS implementations can vary widely, and sometimes RSS files can be invalid. I like testing with `https://gizmodo.com/feed` because I know it's always well-formed. If the build worked, there should now be a `gh-pages` branch in your repository!
+4. Now that we have the `gh-pages` branch built with our generated site, we can deploy it using GitHub Pages. On your repository, go to Settings > Pages (Under Code and Automation), and in the Build and Deployment section:
     1. Set Source to `Deploy from a branch`
     2. Select `gh-pages` as the Branch
     3. Click Save
