@@ -5,7 +5,7 @@ body:
     description: Hello! Can you introduce yourself in a couple sentences?
 - type: input
   attributes:
-    label: Blogroll Link
+    label: My Blogroll
     description: Link to your shiny new blogroll
   validations:
     required: true
@@ -15,5 +15,5 @@ body:
     description: What do we need to read? Share up to 5 latest posts from your blogroll
 - type: input
   attributes:
-    label: Your Link
+    label: My Link
     description: Do you have a personal page or blog we shoud check out?
