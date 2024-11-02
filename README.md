@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="img/logo.png" width="100" alt="Warp" />
+<img src="img/logo.png" width="75" alt="Logo" />
     
 # StaticBlogroll
 
