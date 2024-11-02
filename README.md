@@ -4,6 +4,10 @@
     
 # StaticBlogroll
 
+![GitHub Release](https://img.shields.io/github/v/release/ianwold/staticblogroll?include_prereleases&style=for-the-badge&label=version)
+![GitHub License](https://img.shields.io/github/license/ianwold/staticblogroll?style=for-the-badge&link=https%3A%2F%2Fgithub.com%2FIanWold%2FStaticBlogroll%3Ftab%3DMIT-1-ov-file)
+![GitHub discussions custom search](https://img.shields.io/github/discussions-search?query=repo%3Aianwold%2Fstaticblogroll%20is%3Aopen%20category%3AShowcase&style=for-the-badge&label=blogrolls%20made&link=https%3A%2F%2Fgithub.com%2FIanWold%2FStaticBlogroll%2Fdiscussions%2Fcategories%2Fshowcase)
+
 Publish a **blazingly fast** and **super cool** blogroll with recent posts using Github Actions and Pages!
 
 Fast Setup ⚡ Low Maintenance 💪 Extremely Dapper 😎 Statically-Generated
