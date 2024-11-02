@@ -23,13 +23,13 @@ How many of these blogs do you come back to? Probably not too many. It's a shame
 
 Just about every blog has an RSS feed, but even so it can be a bit of a barrier to get and keep watching an RSS reader. That's the problem I found myself in: I added a bunch of blogs to the RSS reader on my phone and then never opened it!
 
-This project is an attempt to lower the barrier and make it easier to both keep your own reading list and to publish it to help others discover the cool blogs you've found. Fork this repository, save your list of RSS feeds, and use GitHub pages to deploy a [nice, dapper page](https://ian.wold.guru/Blogroll/) showing off your blogs and their latest posts! If you're like me, you might be inclined to set this site as your browser's homepage to get a little reading in before the meetings start.
+This project is an attempt to lower the barrier and make it easier to both keep your own reading list and to publish it to help others discover the cool blogs you've found. This is a template repo: [create your own repo with this template](https://github.com/new?template_name=StaticBlogroll&template_owner=IanWold), save your list of RSS feeds, and use GitHub pages to deploy a [nice, dapper page](https://ian.wold.guru/Blogroll/) showing off your blogs and their latest posts! If you're like me, you might be inclined to set this site as your browser's homepage to get a little reading in before the meetings start.
 
 ## Setup
 
 It's easy to set up your own blogroll using this repo, though it does include a couple steps to configure GitHub appropriately:
 
-1. Fork this repo
+1. [Create a new repo using this template](https://github.com/new?template_name=StaticBlogroll&template_owner=IanWold) (follow that link or click the `Use this template` button on the top right)
 2. On your new repository, go to Settings > Actions (under Code and Automation) > General, and in the section Workflow permissions:
     1. Select `Read and Write Permissions`
     2. Check `Allow GitHub Actions to create and approve pull requests`
@@ -58,7 +58,7 @@ The `config.json` file contains all the configuration for the generated site:
 
 ## Next Steps
 
-This is very intentionally _not_ a product you install and host, but a repo for you to _fork_ and do your own thing with. It's a base canvas you can use and extend however works best for you!
+This is very intentionally _not_ a product you install and host, but a template for you to make your own repo and do your own thing with. It's a base canvas you can use and extend however works best for you!
 
 ### Files
 
@@ -77,6 +77,6 @@ It then runs `build.csx`, which outputs the site to `/output`. The contents of t
 
 ## Contributing
 
-Thank you for your interest, I would _love_ for you to contribute! If you identify a bug or a feature you want to add, please open an issue on it and we can figure next steps. I can't promise to include all features, my goal is to maintain this as a lightweight, super-easy way for folks to fork and get going.
+Thank you for your interest, I would _love_ for you to contribute! If you identify a bug or a feature you want to add, please open an issue on it and we can figure next steps. I can't promise to include all features, my goal is to maintain this as a lightweight, super-easy way for folks to start a repo and get going.
 
 If you've identified a bug and have a simple fix it's definitely alright to open a PR off the bat!
