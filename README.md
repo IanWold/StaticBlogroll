@@ -50,6 +50,12 @@ The only final step is to show off your fancy new blogroll: [post your blogroll 
 
 If you get stuck anywhere please feel free to [ask a question](https://github.com/IanWold/StaticBlogroll/discussions/new?category=questions) in the discussions on this repository, or search if someone's already had the same issue. I aim to respond within the next business day unless I'm out on vacation.
 
+### Potential Errors
+
+The way the Action workflow works is it runs the build tool then copies the output HTML files into a separate branch, `gh-pages` from which Pages deploys the site. In order to do this, Actions needs permissions to be manually configured in the repository settings (described in step 2 above). When you first create your repository, you'll notice that Actions will kick off the workflow and this first run _will_ fail because the permissions weren't set. It's important to follow through to step 3 above to commit to the main branch to trigger a rebuild. If this one fails, be sure to check that you're checking the exact setting described above.
+
+Pages has some interesting, clever tricks up its sleeve about where it deploys your site. If you're like me, you might have a separate repo using Pages to host a personal (or some other) site with a custom URL - in my case it's [ian.wold.guru](https://ian.wold.guru). If that's the case, Pages will deploy your site to `<your-url>/<your-repo-name>`, which in my case was [ian.wold.guru/Blogroll](https://ian.wold.guru/Blogroll). This might be desirable for you, or it might not. If your DNS for your custom domain is improperly configured, your site will not show even though Actions will report that it deployed your new blogroll to `<your-url>/<your-repo-name>`. Be sure to check your DNS settings on your custom domain. For more documentation about how Pages works with custom domains, check out [Pages' documentation](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site).
+
 ## Configuration
 
 The `config.json` file contains all the configuration for the generated site:
