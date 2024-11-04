@@ -21,13 +21,9 @@ Fast Setup ⚡ Low Maintenance 💪 Extremely Dapper 😎 Statically-Generated
 
 ---
 
-I'm a big advocate that everyone should be maintaining a blogroll. Not super actively - maybe more passively - but you should definitely have one. No doubt there's dozens of blogs a year you tune into - an article here to get help on an issue, an article there to learn about a topic, articles for fun or insight or curiousity.
+I'm a big advocate that everyone should be maintaining a blogroll. Not super actively - maybe more passively - but you should definitely have one. No doubt there's dozens of blogs a year you tune into - an article here to get help on an issue, an article there to learn about a topic, articles for fun or insight or curiousity. If you need some convincing, [I wrote a bit about this](https://ian.wold.guru/Posts/publish_your_blogroll_now.html) - on my blog!
 
-How many of these blogs do you come back to? Probably not too many. It's a shame though, if an author had one useful article they've probably got a lot more coming; if they were insightful once they'll probably be insightful again. And I'll bet that if you find some interest in a blog, others will as well. Indeed, we should all publish our blogrolls!
-
-Just about every blog has an RSS feed, but even so it can be a bit of a barrier to get and keep watching an RSS reader. That's the problem I found myself in: I added a bunch of blogs to the RSS reader on my phone and then never opened it!
-
-This project is an attempt to lower the barrier and make it easier to both keep your own reading list and to publish it to help others discover the cool blogs you've found. This is a template repo: [create your own repo with this template](https://github.com/new?template_name=StaticBlogroll&template_owner=IanWold), save your list of RSS feeds, and use GitHub pages to deploy a [nice, dapper page](https://ian.wold.guru/Blogroll/) showing off your blogs and their latest posts! If you're like me, you might be inclined to set this site as your browser's homepage to get a little reading in before the meetings start.
+This template repo makes it _ridiculously easy_ to get up and going with a standalone blogroll that doubles as an RSS reader, displaying the most recent posts from your blogs' RSS feeds. Since it's a template repo and not a standalone app or library, it's infinitely customizable for you to make it your own.
 
 ## Setup
 
